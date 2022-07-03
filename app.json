@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "alivio2",
+    "slug": "alivio2",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "alivio2"
+}
