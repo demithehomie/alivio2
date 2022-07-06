@@ -1,17 +1,23 @@
 import React from 'react';
-import { View, Text, StyleSheet, useWindowDimensions} from 'react-native';
+import { TouchableOpacity, View, Text, StyleSheet, useWindowDimensions} from 'react-native';
 
 
-const UpperContainer = () => {
+
+
+//
+
+export default function UpperContainer ({navigation}) {
   return (
-    <View style={styles.uppercontainer}>
-       <Text style={styles.textuc}>
-        CULTO DE DOMINGO       </Text>
-       </View>
+    <TouchableOpacity style={styles.uppercontainer} onPress={() => navigation.navigate('DetailScreen')}>
+    
+       <Text style={styles.textuc}>CULTO DE QUARTA</Text>
+       
+        
+       </TouchableOpacity>
+      
+       
   )
 }
-
-export default UpperContainer;
 
 const styles = StyleSheet.create({
     

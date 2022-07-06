@@ -22,8 +22,10 @@ const styles = StyleSheet.create({
     },
     textmenu: {
         fontSize: 10,
-        justifyContent: 'center',
-        alignItems: 'center',
+        justifyContent: "center",
+        alignItems: "flex-start",
+        paddingBottom: 20,
+        color: "black",
     },
   });
   
