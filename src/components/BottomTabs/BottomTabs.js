@@ -1,30 +1,36 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import HomeScreen from '../../../src/screens/HomeScreen';
+//import ProfileScreen from '../../../src/screens/ProfileScreen';
 
+const Tab = createBottomTabNavigator();
 
-const BottomTabs = () => {
+export default function BottomTabs() {
   return (
-    <View style={styles.container}>
-        <Text style={styles.textmenu}>  BOTTOM TABS </Text>
-    </View>
+    <Tab.Navigator>
+      <Tab.Screen style={styles.container} name="Home" component={HomeScreen} />
+      
+    </Tab.Navigator>
   )
 
 }
 
-export default BottomTabs;
+
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
+     
       backgroundColor: '#E8FBE8',
-      padding: 40,
+      paddingTop: 20,
+      marginTop: 20,
       
     },
     textmenu: {
         fontSize: 10,
         justifyContent: "center",
         alignItems: "flex-start",
-        paddingBottom: 20,
+        paddingBottom: 10,
         color: "black",
     },
   });

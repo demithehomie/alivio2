@@ -1,29 +1,33 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image,  useWindowDimensions, ScrollView,  TouchableOpacity   } from 'react-native';
-import Logo from '../../../assets/images/logo.png';
+import { View, Text, StyleSheet, Image,  useWindowDimensions, ScrollView,  TouchableOpacity, Pressable   } from 'react-native';
+import LeftArrow from '../../../assets/images/arrow.png';
 import MinimumDetails from '../../../src/screens/DetailScreen/MinimumDetails.js';
+import { useNavigation } from '@react-navigation/native';
 
 const DetailScreen = () => {
     
 const {height} = useWindowDimensions();
 
-
+const navigation = useNavigation(); 
     
   return (
     <View>
     <ScrollView vertical={true}>
-        <Image 
-            source={Logo}  
-            style={[styles.logo, {height: height * 0.1}]} 
+    <Pressable onPress={() => navigation.navigate('Home')}>
+    <Image 
+            source={LeftArrow}  
+            style={[styles.leftarrow, {height: height * 0.1}]} 
             resizeMode="contain"
+            
         />
+    </Pressable>
             <Text style={styles.textheadlinechurch}>Comunidade Evangelística Vinho Novo</Text>
-            <Text style={styles.textheadline}>Culto de Celebração</Text>
+            <Text style={styles.textheadline}>Culto de Quarta</Text>
         <View>
             <MinimumDetails />
         </View>
             <Text style={styles.txtdesc}>
-        Culto de Celebração! Nós estamos prontos para te receber de braços abertos. Venha adorar a Deus com a gente! Louvor, Palavra e um ambiente familiar agradável. Todos os domingos às 7 horas.
+        Culto de Celebração! Nós estamos prontos para te receber de braços abertos. Venha adorar a Deus com a gente! Louvor, Palavra e um ambiente familiar agradável. Todas ás quartas às 20:00.
             </Text>
 
         <TouchableOpacity style={styles.button1}>
@@ -43,7 +47,7 @@ export default DetailScreen;
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#E8FBE8',
+      backgroundColor: 'white',
       
     },
     textheadlinechurch: {
@@ -57,13 +61,13 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         fontSize: 30,
     },
-    logo: {
+    leftarrow: {
         
         justifyContent: 'center',
         alignItems: 'center',
-        padding: 2,
-        marginTop: 20,
-        maxWidth: 100,
+        marginLeft: 20,
+        marginTop: 40,
+        maxWidth: 50,
        
     },
   
@@ -79,7 +83,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         padding: 15,
         backgroundColor: "green",
-        color: '#fff',
+        color: 'white',
         borderRadius: 30,
         margin: 30,
         

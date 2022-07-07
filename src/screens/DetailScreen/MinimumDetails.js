@@ -27,7 +27,7 @@ const MinimumDetails = () => {
     ]    
   
 return (
-    <ScrollView horizontal={true}    >
+    <ScrollView horizontal={true}  showsHorizontalScrollIndicator={false} >
     
     {slidingimages.map((item, index) => (
 
@@ -53,7 +53,7 @@ export default MinimumDetails;
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#E8FBE8',
+      backgroundColor: 'white',
       justifyContent: "flex-end",
       width: 370,
       height: 370,

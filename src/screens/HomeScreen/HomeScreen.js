@@ -11,12 +11,12 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
 
-       <Image 
+     <Image 
             source={Logo}  
             style={[styles.logo, {height: height * 0.1}]} 
             resizeMode="contain"
         />
-       <ScrollView vertical={true}>
+       <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
        <Text style={styles.textobemvindo}>Olá Thaíssa</Text>
        <Text style={styles.textodois}>Você está na</Text>
        <Text style={styles.nomedaigreja}>CEVIN</Text>
@@ -49,7 +49,6 @@ const HomeScreen = () => {
     
     </ScrollView> 
 
-    <BottomTabs />
 
     </View>
   );
@@ -61,28 +60,28 @@ export default HomeScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#E8FBE8',
+        backgroundColor: 'white',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 11,
+        padding: 12,
     },
     textobemvindo: {
         fontSize: 25,
         fontWeight: 'bold',
-        textAlign: 'left',
-        paddingRight: 230,
+        
+        paddingRight: 50,
     },
     textodois: {
         paddingTop: 5,
         fontSize: 20,
-        paddingLeft: 250,
+        paddingLeft: 275,
     },
     nomedaigreja: {
         fontSize: 40,
-        paddingLeft: 200,
+        paddingLeft: 275,
     },
     tituloreunioes: {
-        paddingRight: 270,
+        paddingRight: 260,
         fontSize: 25,
         fontWeight: 'bold',
     },
