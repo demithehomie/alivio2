@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image,  useWindowDimensions, ScrollView,  TouchableOpacity, Pressable   } from 'react-native';
 import LeftArrow from '../../../assets/images/arrow.png';
-import MinimumDetails from '../../../src/screens/DetailScreen/MinimumDetails.js';
+import MinimumDetails from './MinimumDetails.js';
 import { useNavigation } from '@react-navigation/native';
 
-const DetailScreen = () => {
+const Domingo = () => {
     
 const {height} = useWindowDimensions();
 
@@ -22,12 +22,12 @@ const navigation = useNavigation();
         />
     </Pressable>
             <Text style={styles.textheadlinechurch}>Comunidade Evangelística Vinho Novo</Text>
-            <Text style={styles.textheadline}>Culto de Quarta</Text>
+            <Text style={styles.textheadline}>Culto de Domingo</Text>
         <View>
             <MinimumDetails />
         </View>
             <Text style={styles.txtdesc}>
-        Culto de Celebração! Nós estamos prontos para te receber de braços abertos. Venha adorar a Deus com a gente! Louvor, Palavra e um ambiente familiar agradável. Todas ás quartas às 20:00.
+        Culto de Celebração! Nós estamos prontos para te receber de braços abertos. Venha adorar a Deus com a gente! Louvor, Palavra e um ambiente familiar agradável. Todos os Domingos às 19hs.
             </Text>
 
         <TouchableOpacity style={styles.button1}>
@@ -42,7 +42,7 @@ const navigation = useNavigation();
   );
 }
 
-export default DetailScreen;
+export default Domingo;
 
 const styles = StyleSheet.create({
     container: {

@@ -7,6 +7,9 @@ import DetailScreen from './src/screens/DetailScreen/DetailScreen';
 import BottomTabs from './src/components/BottomTabs/BottomTabs';
 import { NavigationContainer,  } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Domingo from './src/screens/DetailScreens/Domingo';
+import Quarta from './src/screens/DetailScreens/Quarta';
+import CelulasScreen from './src/screens/DetailScreens/CelulasScreen';
 
 export default function App() {
   return (
@@ -14,7 +17,9 @@ export default function App() {
 <NavigationContainer>
 <Stack.Navigator  initialRouteName='Home' screenOptions={{headerShown: false}} >
     <Stack.Screen name="Home" component={HomeScreen} />
-    <Stack.Screen name="DetailScreen" component={DetailScreen}/>
+    <Stack.Screen name="Domingo" component={Domingo}/>
+    <Stack.Screen name="Quarta" component={Quarta}/>
+    <Stack.Screen name="Celula" component={CelulasScreen}/>
 
 </Stack.Navigator>
 </NavigationContainer>

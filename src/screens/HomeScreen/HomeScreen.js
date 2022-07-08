@@ -1,8 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Image, useWindowDimensions,} from 'react-native';
-import UpperContainer from '../../components/UpperContainer/UpperContainer';
+import UpperContainer from '../../components/CultoQuarta/CultoQuarta';
 import Logo from '../../../assets/images/logo.png';
 import BottomTabs from '../../components/BottomTabs/BottomTabs';
+import CultoQuarta from '../../components/CultoQuarta/CultoQuarta';
+import CultoDomingo from '../../components/CultoDomingo/CultoDomingo';
+import Celulas from '../../components/Células/Células';
 
 const HomeScreen = () => {
 
@@ -24,11 +27,9 @@ const HomeScreen = () => {
 
 
        <ScrollView style={styles.scrollv} horizontal={true} showsHorizontalScrollIndicator={false}>
-        <UpperContainer />
-        <UpperContainer />
-        <UpperContainer />
-        <UpperContainer />
-        <UpperContainer />
+        <CultoQuarta/>
+        <CultoDomingo />
+        <Celulas />
        </ScrollView>
        <Text style={styles.tituloreunioes}>Eventos</Text>
        <ScrollView style={styles.scrollv} horizontal={true} showsHorizontalScrollIndicator={false}>
