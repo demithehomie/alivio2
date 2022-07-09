@@ -6,6 +6,10 @@ import BottomTabs from '../../components/BottomTabs/BottomTabs';
 import CultoQuarta from '../../components/CultoQuarta/CultoQuarta';
 import CultoDomingo from '../../components/CultoDomingo/CultoDomingo';
 import Celulas from '../../components/Células/Células';
+import Caldo from '../DetailScreens/Noite do Caldo';
+import Jumpcevin from '../DetailScreens/Rede JUMP';
+import Caldos from '../../components/Noite do Caldo ou Pastel/Caldo';
+import Jumpdacevin from '../../components/Jump Cevin/JumpdaCevin';
 
 const HomeScreen = () => {
 
@@ -20,12 +24,10 @@ const HomeScreen = () => {
             resizeMode="contain"
         />
        <ScrollView vertical={true} showsVerticalScrollIndicator={false}>
-       <Text style={styles.textobemvindo}>Olá Thaíssa</Text>
+       <Text style={styles.textobemvindo}>Seja bem-vindo!</Text>
        <Text style={styles.textodois}>Você está na</Text>
        <Text style={styles.nomedaigreja}>CEVIN</Text>
        <Text style={styles.tituloreunioes}>Reuniões</Text>
-
-
        <ScrollView style={styles.scrollv} horizontal={true} showsHorizontalScrollIndicator={false}>
         <CultoQuarta/>
         <CultoDomingo />
@@ -33,21 +35,11 @@ const HomeScreen = () => {
        </ScrollView>
        <Text style={styles.tituloreunioes}>Eventos</Text>
        <ScrollView style={styles.scrollv} horizontal={true} showsHorizontalScrollIndicator={false}>
-        <UpperContainer />
-        <UpperContainer />
-        <UpperContainer />
-        <UpperContainer />
-        <UpperContainer />
+        <Caldos />
+        <Jumpdacevin />
+        
        </ScrollView>
-       <Text style={styles.tituloreunioes}>Especiais</Text>
-       <ScrollView style={styles.scrollv} horizontal={true} showsHorizontalScrollIndicator={false}>
-        <UpperContainer />
-        <UpperContainer />
-        <UpperContainer />
-        <UpperContainer />
-        <UpperContainer />
-       </ScrollView>
-    
+      
     </ScrollView> 
 
 
@@ -75,11 +67,11 @@ const styles = StyleSheet.create({
     textodois: {
         paddingTop: 5,
         fontSize: 20,
-        paddingLeft: 275,
+        paddingLeft: 250,
     },
     nomedaigreja: {
         fontSize: 40,
-        paddingLeft: 275,
+        paddingLeft: 250,
     },
     tituloreunioes: {
         paddingRight: 260,

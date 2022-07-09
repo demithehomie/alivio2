@@ -3,14 +3,14 @@ import { TouchableOpacity, View, Text, StyleSheet, useWindowDimensions, ImageBac
 import { useNavigation } from '@react-navigation/native';
 import Pressable from 'react-native/Libraries/Components/Pressable/Pressable';
 
-export default function Celulas() {
+export default function Jumpdacevin() {
 
 const navigation = useNavigation(); 
 
-const image = { uri: "https://blog.sistemajustus.com.br/wp-content/uploads/2016/06/conhec3a7a_os_desafios_de_gerenciar_uma_igreja_em_cc3a9lulas-jpg.jpeg" };
+const image = { uri: "https://live.staticflickr.com/3774/9587140198_b7734f5085_c.jpg" };
 
   return (
-  <Pressable onPress={() => navigation.navigate('Celulass')}>
+  <Pressable onPress={() => navigation.navigate('Jumpcevin')}>
     <View >     
       
        <Image 
@@ -18,7 +18,7 @@ const image = { uri: "https://blog.sistemajustus.com.br/wp-content/uploads/2016/
           resizeMode="cover" 
           style={styles.image} 
           ></Image>
-        <Text style={styles.textuc}>Todas as Células</Text>
+        <Text style={styles.textuc}>Jump da Cevin</Text>
   </View>     
   </Pressable>
       

@@ -3,13 +3,16 @@ import { StyleSheet, Text, View } from 'react-native';
 import HomeScreen from './src/screens/HomeScreen';
 import SignInScreen from './src/screens/SignInScreen/SignInScreen';
 import SignUpScreen from './src/screens/SignUpScreen/SignUpScreen';
-import DetailScreen from './src/screens/DetailScreen/DetailScreen';
+
 import BottomTabs from './src/components/BottomTabs/BottomTabs';
 import { NavigationContainer,  } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Domingo from './src/screens/DetailScreens/Domingo';
 import Quarta from './src/screens/DetailScreens/Quarta';
-import CelulasScreen from './src/screens/DetailScreens/CelulasScreen';
+import Celulass from './src/screens/DetailScreens/Celulass';
+import Jumpcevin from './src/screens/DetailScreens/Rede JUMP';
+import Caldo from './src/screens/DetailScreens/Noite do Caldo';
+
 
 export default function App() {
   return (
@@ -19,8 +22,9 @@ export default function App() {
     <Stack.Screen name="Home" component={HomeScreen} />
     <Stack.Screen name="Domingo" component={Domingo}/>
     <Stack.Screen name="Quarta" component={Quarta}/>
-    <Stack.Screen name="Celula" component={CelulasScreen}/>
-
+    <Stack.Screen name="Celulass" component={Celulass}/>
+    <Stack.Screen name="Caldo" component={Caldo}/>
+    <Stack.Screen name="Jumpcevin" component={Jumpcevin}/>
 </Stack.Navigator>
 </NavigationContainer>
     

@@ -4,7 +4,7 @@ import LeftArrow from '../../../assets/images/arrow.png';
 import MinimumDetails from './MinimumDetails.js';
 import { useNavigation } from '@react-navigation/native';
 
-const Quarta = () => {
+const Celulass = () => {
     
 const {height} = useWindowDimensions();
 
@@ -22,17 +22,47 @@ const navigation = useNavigation();
         />
     </Pressable>
             <Text style={styles.textheadlinechurch}>Comunidade Evangelística Vinho Novo</Text>
-            <Text style={styles.textheadline}>Culto de Quarta</Text>
+            <Text style={styles.textheadline}>Células</Text>
         <View>
             <MinimumDetails />
         </View>
             <Text style={styles.txtdesc}>
-        Culto de Celebração! Nós estamos prontos para te receber de braços abertos. Venha adorar a Deus com a gente! Louvor, Palavra e um ambiente familiar agradável. Todas ás quartas às 20:00.
+        "Oh! quão bom e quão suave é que os irmãos vivam em união. Salmos 133:1" Faça parte de uma célula mais próxima da sua casa!
             </Text>
 
-            <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate('Home')}>
+        <Text style={styles.textheadline}>
+            Lista de Células
+        </Text>    
+        
+           
+        <TouchableOpacity style={styles.listadecelulas}>
+            <Text style={styles.textolistacelulas}>
+                Célula Sonho de Vida
+            </Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+            <Text style={styles.textolistacelulas}>
+                Célula Canto do Rio
+            </Text>
+        </TouchableOpacity>   
+        <TouchableOpacity> 
+            <Text style={styles.textolistacelulas}>
+                Célula Jump
+            </Text>
+        </TouchableOpacity>
+        <TouchableOpacity>    
+            <Text style={styles.textolistacelulas}>
+                Célula Búzios
+                
+            </Text>
+            
+            
+        </TouchableOpacity>    
+    
+
+        <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate('Home')}>
             <Text style={styles.buttoncolor}>
-                Início
+                Voltar ao Início
             </Text>    
         </TouchableOpacity>
 
@@ -42,7 +72,7 @@ const navigation = useNavigation();
   );
 }
 
-export default Quarta;
+export default Celulass;
 
 const styles = StyleSheet.create({
     container: {
@@ -50,9 +80,25 @@ const styles = StyleSheet.create({
       backgroundColor: 'white',
       
     },
+    listadecelulas1: {
+        fontSize: 20,
+         
+    },
+    textolistacelulas: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        padding: 30,
+        borderBottomColor: 'black',
+        borderBottomWidth: StyleSheet.hairlineWidth,
+    },
+    textosaibamais: {
+        fontSize: 15,
+        paddingLeft: 100,
+        fontWeight: 'bold',
+    },
     textheadlinechurch: {
         fontSize: 15,
-        paddingLeft: 120,
+        paddingLeft: 95,
     },
     textheadline: {
         paddingTop: 5,

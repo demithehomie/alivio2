@@ -4,7 +4,7 @@ import LeftArrow from '../../../assets/images/arrow.png';
 import MinimumDetails from './MinimumDetails.js';
 import { useNavigation } from '@react-navigation/native';
 
-const CelulasScreen = () => {
+const Jumpcevin = () => {
     
 const {height} = useWindowDimensions();
 
@@ -22,17 +22,17 @@ const navigation = useNavigation();
         />
     </Pressable>
             <Text style={styles.textheadlinechurch}>Comunidade Evangelística Vinho Novo</Text>
-            <Text style={styles.textheadline}>Culto de Domingo</Text>
+            <Text style={styles.textheadline}>JUMP CEVIN</Text>
         <View>
             <MinimumDetails />
         </View>
             <Text style={styles.txtdesc}>
-        Culto de Celebração! Nós estamos prontos para te receber de braços abertos. Venha adorar a Deus com a gente! Louvor, Palavra e um ambiente familiar agradável. Todos os Domingos às 19hs.
+        Culto de Celebração! Nós estamos prontos para te receber de braços abertos. Venha adorar a Deus com a gente! Louvor, Palavra e um ambiente familiar agradável. Todas ás quartas às 20:00.
             </Text>
 
-        <TouchableOpacity style={styles.button1}>
+            <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate('Home')}>
             <Text style={styles.buttoncolor}>
-                Comparecer ao próximo culto
+                Início
             </Text>    
         </TouchableOpacity>
 
@@ -42,7 +42,7 @@ const navigation = useNavigation();
   );
 }
 
-export default CelulasScreen;
+export default Jumpcevin;
 
 const styles = StyleSheet.create({
     container: {

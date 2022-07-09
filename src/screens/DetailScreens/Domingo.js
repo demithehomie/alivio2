@@ -8,6 +8,8 @@ const Domingo = () => {
     
 const {height} = useWindowDimensions();
 
+const WhatsappDoPastor = { uri: "https://api.whatsapp.com/send?phone=5521995287018&text=Ol%C3%A1!%20Desejo%20saber%20mais%20sobre%20os%20cultos%2C%20por%20favor!"}
+
 const navigation = useNavigation(); 
     
   return (
@@ -30,9 +32,10 @@ const navigation = useNavigation();
         Culto de Celebração! Nós estamos prontos para te receber de braços abertos. Venha adorar a Deus com a gente! Louvor, Palavra e um ambiente familiar agradável. Todos os Domingos às 19hs.
             </Text>
 
-        <TouchableOpacity style={styles.button1}>
+        <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate('Home')}>
             <Text style={styles.buttoncolor}>
-                Comparecer ao próximo culto
+                Início
+
             </Text>    
         </TouchableOpacity>
 
@@ -41,6 +44,7 @@ const navigation = useNavigation();
     </View>
   );
 }
+
 
 export default Domingo;
 

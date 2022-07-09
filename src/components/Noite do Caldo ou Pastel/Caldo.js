@@ -3,14 +3,14 @@ import { TouchableOpacity, View, Text, StyleSheet, useWindowDimensions, ImageBac
 import { useNavigation } from '@react-navigation/native';
 import Pressable from 'react-native/Libraries/Components/Pressable/Pressable';
 
-export default function Celulas() {
+export default function Caldos() {
 
 const navigation = useNavigation(); 
 
-const image = { uri: "https://blog.sistemajustus.com.br/wp-content/uploads/2016/06/conhec3a7a_os_desafios_de_gerenciar_uma_igreja_em_cc3a9lulas-jpg.jpeg" };
+const image = { uri: "https://conteudo.imguol.com.br/c/entretenimento/82/2020/08/07/caldo-de-pinto-1596822198141_v2_4x3.jpg" };
 
   return (
-  <Pressable onPress={() => navigation.navigate('Celulass')}>
+  <Pressable onPress={() => navigation.navigate('Caldo')}>
     <View >     
       
        <Image 
@@ -18,7 +18,7 @@ const image = { uri: "https://blog.sistemajustus.com.br/wp-content/uploads/2016/
           resizeMode="cover" 
           style={styles.image} 
           ></Image>
-        <Text style={styles.textuc}>Todas as Células</Text>
+        <Text style={styles.textuc}>Noite do Caldo</Text>
   </View>     
   </Pressable>
       
