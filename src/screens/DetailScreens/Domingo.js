@@ -35,7 +35,6 @@ const navigation = useNavigation();
         <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate('Home')}>
             <Text style={styles.buttoncolor}>
                 Início
-
             </Text>    
         </TouchableOpacity>
 

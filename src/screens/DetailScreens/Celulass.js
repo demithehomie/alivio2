@@ -30,7 +30,7 @@ const navigation = useNavigation();
         "Oh! quão bom e quão suave é que os irmãos vivam em união. Salmos 133:1" Faça parte de uma célula mais próxima da sua casa!
             </Text>
 
-        <Text style={styles.textheadline}>
+        <Text style={styles.textheadline2}>
             Lista de Células
         </Text>    
         
@@ -88,8 +88,10 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         padding: 30,
-        borderBottomColor: 'black',
+        borderTopColor: 'grey',
+        borderBottomColor: 'grey',
         borderBottomWidth: StyleSheet.hairlineWidth,
+        borderTopWidth: StyleSheet.hairlineWidth,
     },
     textosaibamais: {
         fontSize: 15,
@@ -106,6 +108,14 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         fontSize: 30,
+    },
+    textheadline2: { 
+        paddingTop: 5,
+        paddingLeft: 30,
+        alignItems: "center",
+        justifyContent: "center",
+        fontSize: 30,
+        paddingBottom: 15,
     },
     leftarrow: {
         

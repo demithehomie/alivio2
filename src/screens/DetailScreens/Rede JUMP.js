@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image,  useWindowDimensions, ScrollView,  TouchableOpacity, Pressable   } from 'react-native';
 import LeftArrow from '../../../assets/images/arrow.png';
-import MinimumDetails from './MinimumDetails.js';
+import MinimumDetailsCelulaJ  from './MinimumDetails.js';
 import { useNavigation } from '@react-navigation/native';
 
 const Jumpcevin = () => {
@@ -13,21 +13,20 @@ const navigation = useNavigation();
   return (
     <View>
     <ScrollView vertical={true}>
-    <Pressable onPress={() => navigation.navigate('Home')}>
-    <Image 
-            source={LeftArrow}  
-            style={[styles.leftarrow, {height: height * 0.1}]} 
-            resizeMode="contain"
-            
-        />
-    </Pressable>
+        <Pressable onPress={() => navigation.navigate('Home')}>
+            <Image 
+                source={LeftArrow}  
+                style={[styles.leftarrow, {height: height * 0.1}]} 
+                resizeMode="contain"
+            />
+        </Pressable>
             <Text style={styles.textheadlinechurch}>Comunidade Evangelística Vinho Novo</Text>
             <Text style={styles.textheadline}>JUMP CEVIN</Text>
         <View>
-            <MinimumDetails />
+            <MinimumDetailsCelulaJ />
         </View>
             <Text style={styles.txtdesc}>
-        Culto de Celebração! Nós estamos prontos para te receber de braços abertos. Venha adorar a Deus com a gente! Louvor, Palavra e um ambiente familiar agradável. Todas ás quartas às 20:00.
+        "Jovens, eu escrevi a vocês, porque são fortes, e em vocês a Palavra de Deus permanece, e vocês venceram o Maligno. 1 João 2:14". Venha adorar a Deus com a gente! Louvor, Palavra e um ambiente familiar agradável. Todas ás quartas às 20:00.
             </Text>
 
             <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate('Home')}>

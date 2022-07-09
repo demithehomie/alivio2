@@ -4,7 +4,7 @@ import LeftArrow from '../../../assets/images/arrow.png';
 import MinimumDetails from './MinimumDetails.js';
 import { useNavigation } from '@react-navigation/native';
 
-const Quarta = () => {
+const Caldo = () => {
     
 const {height} = useWindowDimensions();
 
@@ -22,7 +22,7 @@ const navigation = useNavigation();
         />
     </Pressable>
             <Text style={styles.textheadlinechurch}>Comunidade Evangelística Vinho Novo</Text>
-            <Text style={styles.textheadline}>Culto de Quarta</Text>
+            <Text style={styles.textheadline}>Noite do Caldo</Text>
         <View>
             <MinimumDetails />
         </View>
@@ -42,7 +42,7 @@ const navigation = useNavigation();
   );
 }
 
-export default Quarta;
+export default Caldo;
 
 const styles = StyleSheet.create({
     container: {
