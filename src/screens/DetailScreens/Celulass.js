@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image,  useWindowDimensions, ScrollView,  TouchableOpacity, Pressable   } from 'react-native';
+import { View, Text, StyleSheet, Image,  useWindowDimensions, ScrollView, Linking, TouchableOpacity, Pressable   } from 'react-native';
 import LeftArrow from '../../../assets/images/arrow.png';
-import MinimumDetails from './MinimumDetails.js';
+import MinimumDetailsCelulaJ from './MinimumDetails.js';
 import { useNavigation } from '@react-navigation/native';
 
 const Celulass = () => {
@@ -12,19 +12,19 @@ const navigation = useNavigation();
     
   return (
     <View>
-    <ScrollView vertical={true}>
-    <Pressable onPress={() => navigation.navigate('Home')}>
-    <Image 
+        <ScrollView vertical={true}>
+            <Pressable onPress={() => navigation.navigate('Home')}>
+         <Image 
             source={LeftArrow}  
             style={[styles.leftarrow, {height: height * 0.1}]} 
             resizeMode="contain"
             
-        />
-    </Pressable>
-            <Text style={styles.textheadlinechurch}>Comunidade Evangelística Vinho Novo</Text>
-            <Text style={styles.textheadline}>Células</Text>
+            />
+            </Pressable>
+        <Text style={styles.textheadlinechurch}>Comunidade Evangelística Vinho Novo</Text>
+        <Text style={styles.textheadline}>Célulasss</Text>
         <View>
-            <MinimumDetails />
+            <MinimumDetailsCelulaJ />
         </View>
             <Text style={styles.txtdesc}>
         "Oh! quão bom e quão suave é que os irmãos vivam em união. Salmos 133:1" Faça parte de uma célula mais próxima da sua casa!
@@ -36,22 +36,24 @@ const navigation = useNavigation();
         
            
         <TouchableOpacity style={styles.listadecelulas}>
-            <Text style={styles.textolistacelulas}>
+            <Text 
+                    style={styles.textolistacelulas}  
+                    onPress={() => {Linking.openURL('https://api.whatsapp.com/send?phone=5521995287019&text=Ol%C3%A1!%20Quero%20saber%20sobre%20a%20C%C3%A9lula%20do%20Sonho%20de%20Vida%2C%20por%20favor!')}}>
                 Célula Sonho de Vida
             </Text>
         </TouchableOpacity>
         <TouchableOpacity>
-            <Text style={styles.textolistacelulas}>
+            <Text style={styles.textolistacelulas} onPress={() => {Linking.openURL('https://api.whatsapp.com/send?phone=5522997080275&text=Ol%C3%A1!%20Quero%20saber%20sobre%20a%20C%C3%A9lula%20do%20Canto%20do%20Rio%2C%20por%20favor!')}}>
                 Célula Canto do Rio
             </Text>
         </TouchableOpacity>   
         <TouchableOpacity> 
-            <Text style={styles.textolistacelulas}>
+            <Text style={styles.textolistacelulas} onPress={() => {Linking.openURL('https://api.whatsapp.com/send?phone=5522992088520&text=Ol%C3%A1!%20Quero%20saber%20sobre%20a%20C%C3%A9lula%20JUMP%2C%20por%20favor!')}}>
                 Célula Jump
             </Text>
         </TouchableOpacity>
         <TouchableOpacity>    
-            <Text style={styles.textolistacelulas}>
+            <Text style={styles.textolistacelulas} onPress={() => {Linking.openURL('https://api.whatsapp.com/send?phone=5521988491251&text=Ol%C3%A1!%20Quero%20saber%20sobre%20a%20C%C3%A9lula%20da%20CEVIN%20em%20B%C3%BAzios%2C%20por%20favor!')}}   >
                 Célula Búzios
                 
             </Text>

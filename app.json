@@ -2,10 +2,14 @@
   "expo": {
     "name": "Alívio",
     "slug": "alivio2",
+    "icon": "C:\\Users\\55229\\Documents\\demithehomie's Google Drive\\IIIA VENTURE BUILDER\\ALIVIO (EX HRT)\\ALIVIO - CODING FILES\\alivio-second-version-2\\alivio2\\assets\\images\\logocevinwhitesq.png",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.alivio.app"
+    }
   },
   "name": "alivio2"
 }

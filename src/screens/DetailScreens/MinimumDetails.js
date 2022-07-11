@@ -37,7 +37,7 @@ return (
         <Image 
             source= {item.image}
             style={[styles.imge, /*{height: height * 0.4}*/]} 
-            resizeMode="contain"
+            resizeMode="cover"
         />
     
         </ScrollView>

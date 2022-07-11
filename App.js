@@ -35,7 +35,7 @@ const Stack = createNativeStackNavigator();
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E8FBE8',
+    backgroundColor: 'white',
     
   },
 });

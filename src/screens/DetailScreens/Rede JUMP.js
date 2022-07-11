@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image,  useWindowDimensions, ScrollView,  TouchableOpacity, Pressable   } from 'react-native';
 import LeftArrow from '../../../assets/images/arrow.png';
-import MinimumDetailsCelulaJ  from './MinimumDetails.js';
+import MinimumDetailsCelulaJ  from './MinimumDetailsCelula.js';
 import { useNavigation } from '@react-navigation/native';
 
 const Jumpcevin = () => {

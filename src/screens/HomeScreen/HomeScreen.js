@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Image, useWindowDimensions,} from 'react-native';
 import UpperContainer from '../../components/CultoQuarta/CultoQuarta';
-import Logo from '../../../assets/images/logo.png';
+import Logo from '../../../assets/images/logocevinwhitesq.png';
 import BottomTabs from '../../components/BottomTabs/BottomTabs';
 import CultoQuarta from '../../components/CultoQuarta/CultoQuarta';
 import CultoDomingo from '../../components/CultoDomingo/CultoDomingo';
